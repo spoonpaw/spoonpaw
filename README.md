@@ -8,3 +8,5 @@
 ⚡ Fact: Aiming to code like a legend.
 
 <img src="https://github-readme-stats.vercel.app/api?username=spoonpaw&show_icons=true"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=spoonpaw&show_icons=true"/>

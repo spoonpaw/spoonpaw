@@ -8,8 +8,8 @@
 ⚡ Fact: Aiming to code like a legend.
 
 <a href="https://github.com/spoonpaw">
-  <img height="200" align="center" src="https://github-readme-stats.vercel.app/api?username=spoonpaw&show_icons=true" />
+  <img height="200" align="center" src="./profile/stats.svg" />
 </a>
 <a href="https://github.com/spoonpaw">
-  <img height="200" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=spoonpaw&show_icons=true&layout=compact&langs_count=8" />
+  <img height="200" align="center" src="./profile/top-langs.svg" />
 </a>

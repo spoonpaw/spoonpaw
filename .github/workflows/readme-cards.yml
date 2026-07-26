@@ -21,7 +21,6 @@ jobs:
           options: username=${{ github.repository_owner }}&show_icons=true
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
 
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
@@ -30,7 +29,12 @@ jobs:
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=8
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: true
+
+      # The action writes a "Something went wrong" placeholder card and exits 0
+      # when the API call fails, so a green run is not proof the cards are good.
+      # Its fail_on_error input only exists on master, not in any release yet.
+      - name: Reject broken cards
+        run: "! grep -l 'Something went wrong' profile/*.svg"
 
       - name: Commit cards
         run: |
